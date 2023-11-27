@@ -33,17 +33,10 @@ function checkS() {
     //Acquisisco il valore digitato dall'utente in pagina
     let val1 = stringa.value;
 
-    //Acquisisco il primo carattere della stringa
-    let FirstC=val1.slice(0, 1);
+    //inverto il valore digitato
+    let reverseVal1 = Array.from(val1).reverse().join("");
 
-    //Acquisisco il secondo carattere della stringa
-    let SecondC=val1.slice(1, 2);
-
-    //Acquisisco il penultimo carattere della stringa
-    let LastC2=val1.slice(-2, -1);
-
-    //Acquisisco l'ultimo carattere della stringa
-    let LastC=val1.slice(-1);
+    console.log(reverseVal1);
 
     //acquisisco i valore nel tag p(qualora ci fosse)
     const number = document.querySelector('#box p');
@@ -56,7 +49,7 @@ function checkS() {
     }
 
     // controllo a 4 (prime due lettere con ultime due)
-    if (FirstC === LastC && SecondC === LastC2){
+    if (val1 === reverseVal1){
         //Creo l'elemento all'interno del mio file html
         const stringa = document.createElement ("p");
 
