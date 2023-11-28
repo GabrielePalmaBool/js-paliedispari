@@ -161,15 +161,29 @@ function winner(val1, val2){
             Box.append(stringa);
 
         }
-        
+
         //in alternativa
-        else {
+        else if (valPc < valU) {
 
             //Creo l'elemento all'interno del mio file html
             const stringa = document.createElement ("p");
 
             //inserisco scritta all'interno del mio contenuto
             stringa.append("Vince giocatore con: "+valU+ " un valore "+TypeU);
+
+            //inserisco stringa all'interno del mio contenitore
+            Box.append(stringa);
+
+        }
+
+        // in caso di valori uguali
+        else {
+
+            //Creo l'elemento all'interno del mio file html
+            const stringa = document.createElement ("p");
+
+            //inserisco scritta all'interno del mio contenuto
+            stringa.append("Parità");
 
             //inserisco stringa all'interno del mio contenitore
             Box.append(stringa);
@@ -196,13 +210,27 @@ function winner(val1, val2){
         }
 
         //in alternativa
-        else {
+        else if (valPc < valU) {
 
             //Creo l'elemento all'interno del mio file html
             const stringa = document.createElement ("p");
 
             //inserisco scritta all'interno del mio contenuto
             stringa.append("Vince giocatore con: "+valU+ " un valore "+TypeU);
+
+            //inserisco stringa all'interno del mio contenitore
+            Box.append(stringa);
+
+        }
+
+        // in caso di valori uguali
+        else {
+
+            //Creo l'elemento all'interno del mio file html
+            const stringa = document.createElement ("p");
+
+            //inserisco scritta all'interno del mio contenuto
+            stringa.append("Parità");
 
             //inserisco stringa all'interno del mio contenitore
             Box.append(stringa);
